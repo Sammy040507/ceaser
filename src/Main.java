@@ -13,3 +13,18 @@ public class Main {
         }
     }
 }
+public class Verwaltung {
+    public Verwaltung(){
+        System.out.println("[0] Beenden");
+         int option = scanner.nextInt();
+         scanner.nextline();
+         if(option == 1) {
+             System.out.println("Gib mir das zu verschlüsselnde Wort an:");
+             String zeichenkette = scanner.nextLine();
+             System.out.println("Gib den Schlüssel an:");
+             String SchluesselString = scanner.nextline();
+             int schluessel = Integer.parseInt(schluesselString);
+             caeser = new Caeser();
+         }
+    }
+}
