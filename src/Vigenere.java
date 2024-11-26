@@ -2,15 +2,15 @@ public class Vigenere {
     private String gt;
     private String kt;
     private String s;
-
-    public Vigenere(){
+    // Der Geheimtext, Klartext und der Schlüssel wird in "gt", "kt" und "s" gespeichert.
+    public Vigenere(){ // Konstruktor:
         gt="";
         kt="";
         s="a";
     }
     public void verschluesseln(){
         gt="";
-        String tkt= kt.toUpperCase();
+        String tkt= kt.toUpperCase(); // Der Klartext wird in Großbuchstaben umgewandelt und in "tkt" gespeichert.
         System.out.println(kt);
         String TemporerString= s.toUpperCase();
         for(int i=0;i<tkt.length();i++){
