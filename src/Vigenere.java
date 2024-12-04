@@ -11,8 +11,9 @@ public class Vigenere {
     public void verschluesseln(){
         gt="";
         String tkt= kt.toUpperCase(); // Der Klartext wird in Großbuchstaben umgewandelt und in "tkt" gespeichert.
-        System.out.println(kt);
+        System.out.println(kt); // Der Klartext wird ausgegeben.
         String TemporerString= s.toUpperCase();
+        // Der Schlüssel wird in Großbuchstaben umgewandelt und in "TemporerString" gespeichert
         for(int i=0;i<tkt.length();i++){
             int h = this.getAscif(tkt.charAt(i));
             int stemporer=( TemporerString.charAt(i%TemporerString.length())-65)%26;
